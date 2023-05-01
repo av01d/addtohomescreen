@@ -1,5 +1,5 @@
 // Minimal service worker
-self.addEventListener('fetch', function() {
+self.addEventListener('fetch', () => {
     return;
 });
 
