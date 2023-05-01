@@ -243,7 +243,6 @@
 	}
 
 	const renderPWABar = () => {
-		console.log('renderPWABar')
 		let displayCount = getSessionProperty('displayCount') || 0;
 
 		const tmpl = {
@@ -335,7 +334,9 @@
 			})
 		}
 
-		log(`Waiting ${config.displayDelay} seconds...`);
+		if (config.displayDelay > 0) {
+			log(`Waiting ${config.displayDelay} seconds...`);
+		}
 
 		setTimeout(() => {
 			document.body.append(athDiv);
