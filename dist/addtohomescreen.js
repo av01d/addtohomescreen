@@ -41,11 +41,11 @@
 			},
 			de_de: {
 				ios: 'Um diese Web-App zum Home-Bildschirm hinzuzufügen, tippen Sie auf #icon# und dann <strong>Zum Home-Bildschirm</strong>.',
-				native: 'Fügen Sie diese Webanwendung zu meinem Startbildschirm hinzu.'
+				native: 'Fügen Sie diese Web-App zu meinem Startbildschirm hinzu.'
 			},
 			da_dk: {
 				ios: 'For at tilføje denne web app til hjemmeskærmen: Tryk #icon# og derefter <strong>Føj til hjemmeskærm</strong>.',
-				native: 'Tilføj denne webapp til min startskærm.'
+				native: 'Tilføj denne web app til min startskærm.'
 			},
 			el_gr: {
 				ios: 'Για να προσθέσετε την εφαρμογή στην αρχική οθόνη: πατήστε το #icon# και μετά <strong>Πρόσθεσε στην αρχική οθόνη</strong>.',
@@ -130,28 +130,12 @@
 		}
 	}, beforeInstallPrompt = null;
 
-	/*
-	const dict = {
-		en: 'To add this game to the home screen: tap #icon# and then <b>Add to Home Screen</b>.',
-		es: 'Para añadir este juego a la pantalla de inicio: pulsa #icon# y selecciona <b>Añadir a pantalla de inicio</b>.',
-		de: 'Um dieses Spiel zum Home-Bildschirm hinzuzufügen, tippen Sie auf #icon# und dann <b>Zum Home-Bildschirm</b>',
-		fr: 'Pour ajouter ce jue sur l\'écran d\'accueil : Appuyez #icon# et sélectionnez <b>Ajouter sur l\'écran d\'accueil</b>.',
-		nl: 'Om dit spel aan je startscherm toe te voegen, klik op #icon# en dan <b>Zet op beginscherm</b>',
-		it: 'Per aggiungere questo gioco alla schermata iniziale: premi #icon# e poi <b>Aggiungi a Home</b>.',
-		pt: 'Para adicionar este jogo ao ecrã principal: clique #icon# e depois <b>Ecrã principal</b>.',
-		ru: 'Чтобы добавить эта игра на свой домашний экран, нажмите на иконку #icon# и затем <b>На экран "Домой"</b>.',
-		tr: 'Bu oyunu ana ekrana eklemek için, #icon# ve ardından <b>ana ekrana ekle</b> butonunu tıklayın.',
-		cn: '如要把应用程序加至主屏幕,请点击#icon#, 然后<b>添加到主屏幕</b>'
-	};
-	*/
-
 	// Add 2 characters language support
 	for (let lang in config.dict) {
 		config.dict[lang.substr(0, 2)] = config.dict[lang];
 	}
 
-	//let language = navigator.language && navigator.language.toLowerCase().replace('-', '_') || '';
-	let language;
+	let language = 'en_us';
 
 	const platform = {
 		isCompatible: false,
