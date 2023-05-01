@@ -5,7 +5,7 @@ On compatible devices (Android and iOS devices, Chromium based desktop browsers)
 The script opens an always-on-top message inviting the user to add the application to their home screen.
 It is *light weight*, *cross browser*, *stand alone* (doesn't depend on any other libraries) and it is highly *configurable*.
 
-<img src="https://av01d.github.io/addtohomescreen/img/screenshot-android.png" width="50%">
+<img src="https://av01d.github.io/addtohomescreen/img/screenshot-android.jpg" width="50%">
 <img src="https://av01d.github.io/addtohomescreen/img/screenshot-ios.png" width="50%">
 
 On iOS devices (iPhone, iPad), it explains visitors how to add the App to their homescreen: "To add this web app to the home screen: tap `arrow box icon` and then *Add to Home Screen*".
