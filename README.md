@@ -75,32 +75,32 @@ addToHomescreen.([options]);
 
 ```js
 const ath = addToHomescreen({
-	appId: 'my-web-app',
-	// debug: true,
-	// lang: 'nl_nl',
-	logging: true,
-	position: 'bottom',
-	allowOptout: false,
-	showAppIcon: true,
-	displayDelay: 0, // In seconds
-	maxDisplayCount: 99,
-	pauseBetweenDisplays: 0, // In minutes
-	skipFirstVisit: true,
-	onInstall: () => {
-		console.log('onInstall event');
-	},
-	onShow: () => {
-		console.log('onShow event');
-	},
-	onHide: () => {
-		console.log('onHide event');
-	},
-	onCancel: () => {
-		console.log('onCancel event');
-	},
-	onCanInstall: (e) => {
-		console.log('onCanInstall event');
-	}
+   appId: 'my-web-app',
+   // debug: true,
+   // lang: 'nl_nl',
+   logging: true,
+   position: 'bottom',
+   allowOptout: false,
+   showAppIcon: true,
+   displayDelay: 0, // In seconds
+   maxDisplayCount: 99,
+   pauseBetweenDisplays: 0, // In minutes
+   skipFirstVisit: true,
+   onInstall: () => {
+      console.log('onInstall event');
+   },
+   onShow: () => {
+      console.log('onShow event');
+   },
+   onHide: () => {
+      console.log('onHide event');
+   },
+   onCancel: () => {
+      console.log('onCancel event');
+   },
+   onCanInstall: (e) => {
+      console.log('onCanInstall event');
+   }
 });
 
 ```
