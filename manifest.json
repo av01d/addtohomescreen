@@ -1,0 +1,31 @@
+{
+	"name": "Add to Homescreen",
+	"short_name": "A2HS",
+	"icons": [
+		{
+			"src": "img/icon-76.png",
+			"sizes": "76x76",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icon-120.png",
+			"sizes": "120x120",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icon-152.png",
+			"sizes": "152x152",
+			"type": "image/png"
+		},
+		{
+			"src": "img/icon-196.png",
+			"sizes": "196x196",
+			"type": "image/png"
+		}
+	],
+	"start_url": "./",
+	"display": "standalone",
+	"orientation": "portrait",
+	"theme_color": "#000000",
+	"background_color": "#000000"
+}
