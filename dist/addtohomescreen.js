@@ -16,7 +16,7 @@
 ((window, document) => {
 	let config = {
 		appId: 'a2hs',
-		position: 'top', // 'top' or 'bottom'
+		position: 'bottom', // 'top' or 'bottom'
 		logging: true,
 		debug: false,
 
