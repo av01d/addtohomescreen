@@ -1,17 +1,17 @@
-# addtohomescreen.js
+# addtohomescreen
 
 Encourage visitors of your web app to add the app to the homescreen of their devices.
 On compatible devices (Android and iOS devices, Chromium based desktop browsers), 
 The script opens an always-on-top message inviting the user to add the application to their home screen.
 It is *light weight*, *cross browser*, *stand alone* (doesn't depend on any other libraries) and it is highly *configurable*.
 
-<img src="https://av01d.github.io/addtohomescreen.js/img/screenshot-android.png" width="50%">
-<img src="https://av01d.github.io/addtohomescreen.js/img/screenshot-ios.png" width="50%">
+<img src="https://av01d.github.io/addtohomescreen/img/screenshot-android.png" width="50%">
+<img src="https://av01d.github.io/addtohomescreen/img/screenshot-ios.png" width="50%">
 
 On iOS devices (iPhone, iPad), it explains visitors how to add the App to their homescreen: "To add this web app to the home screen: tap `arrow box icon` and then *Add to Home Screen*".
 On Chromium-based browsers on desktop and Android, including Google Chrome, Samsung Internet, and Microsoft Edge, it shows the message "Add this web app to my home screen". Users can click that message to actually install the app on their home screen.
 
-## [Live Demo](https://av01d.github.io/addtohomescreen.js/index.html)
+## [Live Demo](https://av01d.github.io/addtohomescreen/index.html)
 
 ## Table of contents
 - [Features](#features)
@@ -33,7 +33,7 @@ On Chromium-based browsers on desktop and Android, including Google Chrome, Sams
 
 ## Demo
 
-[Live demo](https://av01d.github.io/addtohomescreen.js/index.html).
+[Live demo](https://av01d.github.io/addtohomescreen/index.html).
 
 ## Getting started
 
@@ -222,7 +222,7 @@ This callback will only be called on Android devices and in Chromium based brows
 - Default: `undefined`
 
 This callback is called when the user's browser is capable of adding webapps to the homepage by means of the `beforeinstallprompt` event.
-Example use: Display a "install this webapp" icon somewhere on the page, outside the install-as-webapp overlay. See [example](https://av01d.github.io/addtohomescreen.js/index.html).
+Example use: Display a "install this webapp" icon somewhere on the page, outside the install-as-webapp overlay. See [example](https://av01d.github.io/addtohomescreen/index.html).
 
 
 [⬆ back to top](#table-of-contents)
@@ -250,7 +250,7 @@ ath.setDict('en_us', 'native', 'Add this awesome game to my home screen.');
 
 ## Real world examples
 
-The addtohomescreen.js component is used in all HTML5 games found on [HTMLgames.com](https://www.htmlgames.com/).
+The addtohomescreen component is used in all HTML5 games found on [HTMLgames.com](https://www.htmlgames.com/).
 
 [⬆ back to top](#table-of-contents)
 
