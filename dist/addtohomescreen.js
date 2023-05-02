@@ -248,7 +248,7 @@
 		if (config.optoutCount > 0) {
 			let optoutCount = getSessionProperty('optoutCount') || 0;
 			if (optoutCount >= config.optoutCount) {
-				log('Not showing PWA bar, you opted out.');
+				log(`Not showing PWA bar, you opted out by closing the PWA bar ${config.optoutCount} times.`);
 				return false;
 			}
 		}
