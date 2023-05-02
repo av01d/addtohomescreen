@@ -36,19 +36,19 @@
 		dict: {
 			cs_cs: {
 				ios: 'Pro přidáni této webové aplikace na úvodní obrazovku: stlačte #icon# a pak <strong>Přidat na úvodní obrazovku</strong>.',
-				native: 'Přidání této webové aplikace na domovskou obrazovku.'
+				native: 'Přidat tuto aplikaci wep na domovskou obrazovku.'
 			},
 			de_de: {
 				ios: 'Um diese Web-App zum Home-Bildschirm hinzuzufügen, tippen Sie auf #icon# und dann <strong>Zum Home-Bildschirm</strong>.',
-				native: 'Fügen Sie diese Web-App zu meinem Startbildschirm hinzu.'
+				native: 'Füge diese Wep-App zu meinem Startbildschirm hinzu.'
 			},
 			da_dk: {
 				ios: 'For at tilføje denne web app til hjemmeskærmen: Tryk #icon# og derefter <strong>Føj til hjemmeskærm</strong>.',
-				native: 'Tilføj denne web app til min startskærm.'
+				native: 'Tilføj denne wep-app til min startskærm.'
 			},
 			el_gr: {
 				ios: 'Για να προσθέσετε την εφαρμογή στην αρχική οθόνη: πατήστε το #icon# και μετά <strong>Πρόσθεσε στην αρχική οθόνη</strong>.',
-				native: 'Προσθέστε αυτή την εφαρμογή ιστού στην αρχική μου οθόνη.'
+				native: 'Προσθέστε αυτή την εφαρμογή wep στην αρχική μου οθόνη.'
 			},
 			en_us: {
 				ios: 'To add this web app to the home screen: tap #icon# and then <strong>Add to Home Screen</strong>.',
@@ -56,15 +56,15 @@
 			},
 			es_es: {
 				ios: 'Para añadir esta aplicación web a la pantalla de inicio: pulsa #icon# y selecciona <strong>Añadir a pantalla de inicio</strong>.',
-				native: 'Añadir esta aplicación web a mi pantalla de inicio.'
+				native: 'Añada esta aplicación wep a mi pantalla de inicio.'
 			},
 			fi_fi: {
 				ios: 'Liitä tämä sovellus kotivalikkoon: klikkaa #icon# ja tämän jälkeen <strong>Lisää kotivalikkoon</strong>.',
-				native: 'Lisää tämä verkkosovellus aloitusnäyttööni.'
+				native: 'Lisää tämä wep-sovellus kotinäyttööni.'
 			},
 			fr_fr: {
 				ios: 'Pour ajouter cette application web sur l\'écran d\'accueil : Appuyez #icon# et sélectionnez <strong>Ajouter sur l\'écran d\'accueil</strong>.',
-				native: 'Ajouter cette application web à mon écran d\'accueil.'
+				native: 'Ajouter cette application wep à mon écran d\'accueil.'
 			},
 			he_il: {
 				ios: '<span dir="rtl">להוספת האפליקציה למסך הבית: ללחוץ על #icon# ואז <strong>הוסף למסך הבית</strong>.</span>',
@@ -72,11 +72,11 @@
 			},
 			hu_hu: {
 				ios: 'Ha hozzá szeretné adni ezt az alkalmazást a kezdőképernyőjéhez, érintse meg a következő ikont: #icon# , majd a <strong>Hozzáadás a kezdőképernyőhöz</strong> menüpontot.',
-				native: 'Adja hozzá ezt a webes alkalmazást a kezdőképernyőmhöz.'
+				native: 'Adja hozzá ezt a wep alkalmazást a kezdőképernyőmhöz.'
 			},
 			it_it: {
 				ios: 'Per aggiungere questa web app alla schermata iniziale: premi #icon# e poi <strong>Aggiungi a Home</strong>.',
-				native: 'Aggiungere questa applicazione web alla mia schermata iniziale.'
+				native: 'Aggiungo questa app wep alla mia schermata iniziale.'
 			},
 			ja_jp: {
 				ios: 'このウェプアプリをホーム画面に追加するには、#icon#をタップして<strong>ホーム画面に追加</strong>してください。',
@@ -88,39 +88,39 @@
 			},
 			nb_no: {
 				ios: 'For å installere denne appen på hjem-skjermen: trykk på #icon# og deretter <strong>Legg til på Hjem-skjerm</strong>.',
-				nmative: 'Legg til denne webappen på startskjermen min.'
+				native: 'Legg til denne wep-appen på startskjermen min.'
 			},
 			pt_br: {
 				ios: 'Para adicionar este app à tela de início: clique #icon# e então <strong>Tela de início</strong>.',
-				native: 'Adicione esse aplicativo da Web à minha tela inicial.'
+				native: 'Adicione esse aplicativo wep à minha tela inicial.'
 			},
 			pt_pt: {
 				ios: 'Para adicionar esta app ao ecrã principal: clique #icon# e depois <strong>Ecrã principal</strong>.',
-				native: 'Adicionar esta aplicação Web ao meu ecrã inicial.'
+				native: 'Adicione esta aplicação wep ao meu ecrã inicial.'
 			},
 			nl_nl: {
 				ios: 'Om deze webapp aan je startscherm toe te voegen, klik op #icon# en dan <strong>Zet op beginscherm</strong>.',
-				native: 'Voeg deze webapp toe aan mijn startscherm.',
+				native: 'Voeg deze web-app toe aan mijn startscherm.',
 			},
 			ru_ru: {
 				ios: 'Чтобы добавить этот сайт на свой домашний экран, нажмите на иконку #icon# и затем <strong>На экран "Домой"</strong>.',
-				native: 'Добавьте это веб-приложение на мой домашний экран.'
+				native: 'Добавьте это приложение wep на мой домашний экран.'
 			},
 			sk_sk: {
 				ios: 'Pre pridanie tejto webovej aplikácie na úvodnú obrazovku: stlačte #icon# a potom <strong>Pridať na úvodnú obrazovku</strong>.',
-				native: 'Pridanie tejto webovej aplikácie na domovskú obrazovku.'
+				native: 'Pridať túto aplikáciu wep na domovskú obrazovku.'
 			},
 			sv_se: {
 				ios: 'För att lägga till denna webbapplikation på hemskärmen: tryck på #icon# och därefter <strong>Lägg till på hemskärmen</strong>.',
-				native: 'Lägg till den här webbappen på min startskärm.'
+				native: 'Lägg till den här wep-appen på min hemskärm.'
 			},
 			tr_tr: {
 				ios: 'Uygulamayı ana ekrana eklemek için, #icon# ve ardından <strong>ana ekrana ekle</strong> butonunu tıklayın.',
-				native: 'Bu web uygulamasını ana ekranıma ekleyin.'
+				native: 'Bu wep uygulamasını ana ekranıma ekleyin.'
 			},
 			uk_ua: {
 				ios: 'Щоб додати цей сайт на початковий екран, натисніть #icon#, а потім <strong>На початковий екран</strong>.',
-				native: 'Додати цей веб-додаток на мій домашній екран.'
+				native: 'Додайте цю програму wep на мій домашній екран.'
 			},
 			zh_cn: {
 				ios: '如要把应用程序加至主屏幕,请点击#icon#, 然后<strong>添加到主屏幕</strong>',
