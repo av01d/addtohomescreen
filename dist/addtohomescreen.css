@@ -1,5 +1,5 @@
 .ath {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	display: none;
@@ -11,6 +11,10 @@
 	font-family: sans-serif;
 	animation-duration: 1s;
 	animation-fill-mode: both;
+}
+
+body > .ath {
+	position: fixed;
 }
 
 .ath.bottom {

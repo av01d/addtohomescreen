@@ -26,7 +26,7 @@ On Chromium-based browsers on desktop and Android, including Google Chrome, Sams
 
 ## Features
 
-- Shows 'install this web app to my home screen' message, either on top or bottom of the screen
+- Shows *install this web app to my home screen* message, either on top or bottom of the screen
 - Native install banner on Android and Chromium-based desktop browsers.
 - On iOS, explains visitors how to add the App to their homescreen.
 - Supports 23 languages.
@@ -80,7 +80,7 @@ const ath = addToHomescreen({
    // lang: 'nl_nl',
    logging: true,
    position: 'bottom',
-   allowOptout: false,
+   optoutCount: 3,
    showAppIcon: true,
    displayDelay: 0, // In seconds
    maxDisplayCount: 99,
@@ -143,21 +143,21 @@ The pwa-install-overlay only appears on compatible platforms. By setting `debug`
 
 Whether to show the pwa-install-overlay on top or on the bottom of the screen.
 
+### parent
+
+- Type: `DOMelement`
+- Default: `document.body`
+
+To what element to attach the pwa-install-overlay to.
+
 ### lang
 
 - Type: `String`
 - Default: `undefined`
 - Options: `en_us`, `cs_cs`, `de_de`, `da_dk`, `el_gr`, `es_es`, `fi_fi`, `fr_fr`, `he_il`, `hu_hu`, `it_it`, `ja_jp`, `ko_kr`, `nb_no`, `pt_br`, `pt_pt`, `nl_nl`, `ru_ru`, `sk_sk`, `sv_se`, `tr_tr`, `uk_ua`, `zh_cn`
 
-By default, this addtohomescreen script will show the pwa-install-overlay in the language it detects from the browser.
+By default, addtohomescreen will show the pwa-install-overlay in the language it detects from the browser.
 If you want to override this behavior, you can supply a `lang` configuration option.
-
-### allowOptout
-
-- Type: `Boolean`
-- Default: `true`
-
-When users click the `close` icon in the overlay, they will never see the pwa-install-overlay again. Also, when they click the *install* button, then click `Cancel` instead of `Install`, they will never see the pwa-install-overlay overlay again.
 
 ### showAppIcon
 
@@ -179,7 +179,15 @@ How many seconds to wait before the pwa-install-overlay is displayed to the user
 - Type: `Number`
 - Default: `3`
 
-Absolute maximum number of times the pwa-install-overlay will be shown to a user (0 = no limit).
+Absolute maximum number of times the pwa-install-overlay will be shown to a user (`0` = no limit).
+
+### optoutCount
+
+- Type: `Number`
+- Default: `2`
+
+How many times the user can close the pwa-install-overlay before we stop showing it (opt-out). If set to `0`, there is no opt-out.
+When a user clicks the *Install* message, then clicks `Cancel` instead of `Install`, this counts as a *close* as well.
 
 ### pauseBetweenDisplays
 

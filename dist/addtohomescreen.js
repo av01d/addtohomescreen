@@ -20,10 +20,9 @@
 		logging: true,
 		debug: false,
 
-		allowOptout: true, // When users click `close`, they will never see the PWA bar again
 		skipFirstVisit: true, // Show only to returning visitors (ie: skip the first time you visit)
-
 		maxDisplayCount: 3, // Maximum number of times the message will be shown to the user (0: no limit)
+		optoutCount: 2, // How many times the user can close the bar before we stop showing it (opt-out). Use 0 for no opt-out
 		pauseBetweenDisplays: 1440, // In minutes
 		displayDelay: 1, // In seconds
 		showAppIcon: true, // Show app icon in PWA-bar?
@@ -239,9 +238,19 @@
 			setSessionProperty('displayCount', displayCount);
 		}
 
-		if (getSessionProperty('optedOut')) {
-			log('Not showing PWA bar, you opted out.');
-			return false;
+		const updateOptoutCount = () => {
+			if (config.optoutCount > 0) {
+				let optoutCount = getSessionProperty('optoutCount') || 0;
+				setSessionProperty('optoutCount', optoutCount + 1);
+			}
+		}
+
+		if (config.optoutCount > 0) {
+			let optoutCount = getSessionProperty('optoutCount') || 0;
+			if (optoutCount >= config.optoutCount) {
+				log('Not showing PWA bar, you opted out.');
+				return false;
+			}
 		}
 
 		if (0 != config.maxDisplayCount && displayCount >= config.maxDisplayCount) {
@@ -293,7 +302,7 @@
 		}
 
 		athDiv.querySelector('.close').addEventListener('click', (e) => {
-			config.allowOptout && setSessionProperty('optedOut', true);
+			updateOptoutCount();
 			hidePWABar();
 		});
 
@@ -310,10 +319,10 @@
 					config.onInstall && config.onInstall();
 				}
 				else {
-					config.allowOptout && setSessionProperty('optedOut', true);
 					log('You dismissed the install request.');
-					config.onCancel && config.onCancel();
+					updateOptoutCount();
 					hidePWABar();
+					config.onCancel && config.onCancel();
 				}
 			})
 		}
@@ -323,7 +332,8 @@
 		}
 
 		setTimeout(() => {
-			document.body.append(athDiv);
+			const parent = config.parent ? config.parent : document.body;
+			parent.append(athDiv);
 
 			config.onShow && config.onShow();
 
